@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Polícia Civil</title>
+</head>
+<body>
+    <header>
+        <img src="/imagens/logo.png" alt="logo PCERJ">
+        <nav>
+            <ul id="topico">
+                <li>Inicio</li>
+                <li>Cursos</li>
+                <li>Cursos Especiais</li>
+                <li>Memorial</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="content-wrapper">
+            <!-- Imagem com transição -->
+            <div class="pcerj-img">
+                <img id="image" src="/imagens/delegados.png" alt="imagem civil">
+            </div>
+
+            <!-- Texto do lado direito -->
+            <div class="content">
+                <p class="civil-information" id="title">PCERJ</p>
+                <h2 id="headline">Polícia Civil</h2>
+                <p class="description" id="description">A Polícia Civil do Estado do Rio de Janeiro (PCERJ) é uma instituição responsável pela investigação de crimes e pela manutenção da ordem pública no estado.</p>
+                <button class="information">Conheça</button>
+            </div>
+        </div>
+
+        <!-- Navegação (Setas) -->
+        <div id="arrows">
+            <button id="prev">
+                <img src="/imagens/arrow.png" alt="seta-esquerda">
+            </button>
+            <button id="next">
+                <img src="/imagens/arrow.png" alt="seta-direita">
+            </button>
+        </div>
+
+        <!-- Indicadores -->
+        <div class="indicators">
+            <div class="number" id="number"></div>
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

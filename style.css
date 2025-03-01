@@ -1,0 +1,188 @@
+/* Reseta margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background: rgb(15, 15, 15);
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 10;
+}
+
+header img {
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+/* Section centralizada com limite */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 50px;
+    background: radial-gradient(black, rgb(34, 8, 8));
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limite de largura */
+}
+
+.pcerj-img {
+    width: 45%;
+    max-width: 500px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pcerj-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: opacity 0.5s ease;
+}
+
+.content {
+    width: 45%;
+    max-width: 500px;
+    color: white;
+    text-align: left;
+}
+
+.content .civil-information {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.content .description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: rgb(136, 32, 32);
+}
+
+.content .information {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.content .information:hover {
+    background-color: #e40013;
+}
+
+/* Setas */
+#arrows {
+    width: 70vw;
+    position: absolute;
+    bottom: 20px; /* Coloca as setas no fundo */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    color: rgb(0, 0, 0);
+}
+
+
+#arrows button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; 
+}
+
+#arrows button img {
+    width: 30px;  
+}
+
+
+#arrows button:first-child img {
+    transform: rotate(180deg);  
+}
+
+#arrows button:last-child img {
+    transform: rotate(0deg);  
+}
+
+/* Efeito de hover para as setas */
+#arrows button:hover {
+    background-color: #e05555;  /* Cor de fundo das setas ao passar o mouse */
+}
+
+#arrows button:hover img {
+    transform: scale(1.2);  /* Aumenta o tamanho das setas ao passar o mouse */
+}
+/* Indicadores */
+.indicators {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.indicators ul {
+    display: flex;
+    gap: 10px;
+}
+
+.indicators li {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.indicators li.active {
+    background-color: #ff0000;
+}
