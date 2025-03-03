@@ -1,0 +1,240 @@
+/* CSS PAGINA INICIAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    height: 100px;
+}
+
+header img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #95acee;
+}
+
+/* Section principal */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px 20px 50px;
+    background: #003366;
+    text-align: center;
+}
+
+a { color: inherit; }
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    gap: 40px;
+}
+
+.pcerj-img {
+    flex: 1;
+    max-width: 500px;
+}
+
+.pcerj-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: opacity 0.5s ease;
+}
+
+.content {
+    flex: 1;
+    max-width: 600px;
+    color: white;
+    text-align: left;
+}
+
+.content h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.content .description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+button.information {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    background: #ffffff;
+    color: inherit;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: background 0.3s;
+    list-style: none;
+}
+
+button.information:hover {
+    background: #3c68e0;
+}
+
+/* Setas para navegação */
+#arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#arrows button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#arrows img {
+    width: 100%;
+    max-width: 40px;
+}
+
+#arrows button:hover {
+    opacity: 0.7;
+}
+
+/* Indicadores */
+.indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.indicators li {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.indicators li.active {
+    background-color: white;
+}
+
+/* Conteúdo dinâmico */
+.dynamic-content {
+    padding: 80px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.image-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+
+.image-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.image-text.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.image-text img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(107, 98, 231, 0.5);
+}
+
+.text-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.text-content h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.text-content p {
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+}
+
+/* Seção extra */
+
+#extra-section {
+    max-height: 400px;
+    overflow: hidden;
+    padding-bottom: 50px;
+    background: #003366;
+    text-align: center;
+}
+
+    
+

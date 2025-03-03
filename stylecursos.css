@@ -1,0 +1,241 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding-top: 120px; 
+}
+
+/* CABEÇALHO FIXO */
+header {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    height: 80px;
+}
+
+/* LOGO DO HEADER */
+header img {
+    max-width: 80px;
+    height: auto;
+}
+
+/* MENU DE NAVEGAÇÃO */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* CONTEÚDO PRINCIPAL */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* CONTAINER DAS BOXES */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* ESTILIZAÇÃO DAS BOXES */
+.box {
+    background-color: white;
+    color: #003366;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    min-height: 180px;
+}
+
+/* ESTILIZAÇÃO DA IMAGEM NA BOX */
+.box img {
+    width: 100%; 
+    height: auto;
+    max-height: 120px; 
+    object-fit: cover;
+    border-radius: 5px; 
+}
+
+/* BOTÃO DETALHES */
+button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: auto; 
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0055aa;
+}
+
+/* REMOVENDO ESPAÇO EXTRA NO FINAL DA PÁGINA */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex-grow: 0;
+}
+
+/* POPUP */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+.popup2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content1 {
+    background: white;
+    color: #003366;
+    padding: 20px;
+    width: 100%;
+    height: 95%;
+    border-radius: 10px;
+    position: relative; 
+}
+
+/* Container do Slider */
+.popup-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.popup-images {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.popup-images img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    display: none; 
+}
+
+.popup-images img.active {
+    display: block; 
+}
+
+/* Estilo comum para imagens e vídeos no popup */
+.popup-media {
+    width: 100%;
+    max-height: 100%; /* Garante que a altura máxima da mídia seja proporcional */
+    object-fit: contain; /* Garantir que a mídia se ajuste dentro do contêiner sem distorcer */
+}
+
+.popup-images video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+    display: none;
+}
+
+.popup-images video.active {
+    display: block; 
+}
+
+/* Container do Slider */
+.popup-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden; 
+}
+
+/* Botões de navegação */
+.popup-slider button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%); 
+    font-size: 25px;
+    transition: background 0.3s ease;
+    z-index: 10; 
+}
+
+/* Botão da esquerda */
+.popup-slider .left {
+    left: 10px; 
+}
+
+/* Botão da direita */
+.popup-slider .right {
+    right: 10px; 
+}
+
+button:hover {
+    background-color: #0055aa;
+}

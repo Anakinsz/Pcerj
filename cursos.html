@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policia Civil</title>
+    <link rel="stylesheet" href="stylecursos.css">
+</head>
+<body>
+    <header>
+        <img src="/imagens/logo CIVIL.png" alt="logo PCERJ">
+        <nav>
+            <ul id="topico">
+                <li><a href="inicio.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li> 
+                <li><a href="cursosespeciais.html">Cursos Especiais</a></li> 
+                <li><a href="memorial.html">Memorial</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <h1>Central de Cursos</h1>
+
+    <div class="container">
+        <!-- Box 1 -->
+        <div class="box">
+            <h2>CURSO DE CONDUTA E ORDEM UNIDA</h2>
+            <button class="detalhes-btn" data-popup="popup1">Detalhes</button>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="box">
+            <h2> CURSO DE PATRULHA, ABORDAGEM E MODULAÇÃO</h2>
+            <button class="detalhes-btn" data-popup="popup2">Detalhes</button>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="box">
+            <h2>CURSO DE DETECÇÃO E IDENTIFICAÇÃO DE ILÍCITOS</h2>
+            <button class="detalhes-btn" data-popup="popup3">Detalhes</button>
+        </div>
+
+        <!-- Box 4 -->
+        <div class="box">
+            <h2>CURSO DE CARCEREIRO</h2>
+            <button class="detalhes-btn" data-popup="popup4">Detalhes</button>
+        </div>
+
+        <!-- Box 5 -->
+        <div class="box">
+            <h2>CURSO DE PERÍCIA</h2>
+            <button class="detalhes-btn" data-popup="popup5">Detalhes</button>
+        </div>
+
+        <!-- Box 6 -->
+        <div class="box">
+            <h2>CURSO DE COMBATE AO TRÁFICO </h2>
+            <button class="detalhes-btn" data-popup="popup6">Detalhes</button>
+        </div>
+
+        <!-- Box 7 -->
+        <div class="box">
+            <h2>CANÇÕES DE TFM </h2>
+            <button class="detalhes-btn" data-popup="popup7">Detalhes</button>
+        </div>
+
+        <!-- Box 8 -->
+        <div class="box">
+            <h2>Manual de Recrutamento </h2>
+            <button class="detalhes-btn" data-popup="popup8">Detalhes</button>
+        </div>
+    </div>
+
+    <!-- POPUP -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-text"></p>
+            <div class="popup-slider">
+                <button class="prev">&lt;</button>
+                <div id="popup-images" class="popup-images"></div>
+                <button class="next">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scriptcursos.js"></script>
+</body>
+</html>

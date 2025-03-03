@@ -3,45 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleinicial.css">
     <title>Polícia Civil</title>
 </head>
 <body>
     <header>
-        <img src="/imagens/logo.png" alt="logo PCERJ">
+        <img src="/imagens/logo CIVIL.png" alt="logo PCERJ">
         <nav>
             <ul id="topico">
-                <li>Inicio</li>
-                <li>Cursos</li>
-                <li>Cursos Especiais</li>
-                <li>Memorial</li>
+                <li><a href="inicio.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li> 
+                <li><a href="cursosespeciais.html">Cursos Especiais</a></li> 
+                <li><a href="memorial.html">Memorial</a></li> 
             </ul>
         </nav>
     </header>
 
     <section>
         <div class="content-wrapper">
-            <!-- Imagem com transição -->
+           
             <div class="pcerj-img">
                 <img id="image" src="/imagens/delegados.png" alt="imagem civil">
             </div>
 
-            <!-- Texto do lado direito -->
             <div class="content">
                 <p class="civil-information" id="title">PCERJ</p>
                 <h2 id="headline">Polícia Civil</h2>
-                <p class="description" id="description">A Polícia Civil do Estado do Rio de Janeiro (PCERJ) é uma instituição responsável pela investigação de crimes e pela manutenção da ordem pública no estado.</p>
-                <button class="information">Conheça</button>
+                <p class="description" id="description">Polícia Civil do Estado do Rio de Janeiro (PCERJ) é uma instituição responsável pela investigação de crimes...</p>
+                <button class="information"> <a href="memorial.html">  Conheça</a></button>
             </div>
         </div>
 
-        <!-- Navegação (Setas) -->
         <div id="arrows">
             <button id="prev">
-                <img src="/imagens/arrow.png" alt="seta-esquerda">
+                <img src="/imagens/arrow1.png" alt="seta-esquerda">
             </button>
             <button id="next">
-                <img src="/imagens/arrow.png" alt="seta-direita">
+                <img src="/imagens/arrow2.png" alt="seta-direita">
             </button>
         </div>
 
@@ -56,6 +54,52 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <div class="dynamic-content">
+        <div class="image-text-wrapper">
+            <div class="image-text">
+                <img src="/imagens/wl.jpg" alt="Imagem 1">
+                <div class="text-content">
+                    <h2> CORE </h2>
+                    <p>CORE realiza ações de combate ao crime organizado, com um foco especial em crimes como assaltos a bancos e outras operações de alto risco. Seu diferencial é a experiência e o preparo para enfrentar facções criminosas e desarticular organizações criminosas de grande porte.</p>
+                </div>
+            </div>
+            <div class="image-text">
+                <img src="/imagens/cgpc2.png" alt="Imagem 2">
+                <div class="text-content">
+                    <h2> CGPC </h2>
+                    <p>CGPC Investigação é responsável pela fiscalização interna da Polícia Civil, garantindo que a conduta dos agentes seja ética e dentro da lei. Seu diferencial é a atuação na apuração de irregularidades, como corrupção, e na manutenção da integridade da corporação.</p>
+                </div>
+            </div>
+            <div class="image-text">
+                <img src="/imagens/SAER.png" alt="Imagem 3">
+                <div class="text-content">
+                    <h2>SAER</h2>
+                    <p>SAER Aeropolicial atua com apoio aéreo em operações, utilizando aeronaves para monitoramento, resgates e ações em locais de difícil acesso. Seu grande diferencial é a possibilidade de realizar operações em alto risco e em regiões onde o acesso terrestre é limitado.</p>
+                </div>
+            </div>
+            <div class="image-text">
+                <img src="/imagens/chicago.png" alt="Imagem 3">
+                <div class="text-content">
+                    <h2>GEM</h2>
+                    <p>GEM Motocicletas é especializada em intervenções rápidas e patrulhamento, destacando-se pela agilidade e mobilidade em áreas de difícil acesso. Seu diferencial está na capacidade de realizar perseguições e escoltas com grande eficiência.</p>
+        </div>
+    </div>
+<section id="extra-section">
+    <div class="content-wrapper">
+        <div class="pcerj-img">
+            <img id="extra-image" src="/imagens/pcerj_enhanced.png" alt="Nova Imagem">
+        </div>
+        <div class="content">
+            <p class="civil-information" id="extra-title"> Propósito </p>
+            <h2 id="extra-headline">O que buscamos?</h2>
+            <p class="description" id="extra-description">
+                PCERJ está sempre se atualizando e buscando novas tecnologias e métodos para combate ao crime, garantindo a segurança e a justiça em todo o estado do REVOADA RJ.
+            </p>
+        </div>
+    </div>
+    
+</section>
+
+    <script src="scriptinicial.js"></script>
 </body>
 </html>
